@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SunXiaoFang</title>
+    <style>
+      /* {
+        border: 1px solid black;
+      }*/
+      .flex {
+        display: flex;
+      }
+      .flex1 {
+        display: flex;
+        flex: 1;
+      }
+      .demo {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-width: 1000px;
+        z-index: -10;
+        opacity: 0.7;
+        zoom: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -o-background-size: cover;
+        background-position: center 0;
+      }
+      .touxiang {
+        max-height: 150px;
+        width: 100%;
+        alt: sunxiaofang;
+        border-radius: 50%;
+        object-fit: contain;
+      }
+      .xinxi {
+        width: 200px;
+        height: 360px;
+        margin-top: 40px;
+      }
+      .shiju {
+        width: 100px;
+        height: 550px;
+        margin-top: 30px;
+      }
+      .yinsi {
+        height: 40px;
+        width: 90%;
+        margin-left: 15px;
+        color: rgb(57 82 96);
+      }
+      .shiju {
+        font-family: "华文新魏";
+        writing-mode: vertical-lr;
+        font-size: xx-large;
+        align-items: center;
+        padding-top: 80px;
+        color: rgb(96 40 30);
+        letter-spacing: 0.2em;
+      }
+      .naibai {
+        background: linear-gradient(to bottom, #f5f5f5, #fff);
+        opacity: 0.6;
+        border-radius: 10%;
+      }
+      .song {
+        font-family: "cursive", Arial, sans-serif;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <!--背景图片-->
+    <img src="./img/backgroundsxf.jpg" class="demo" />
+    <div class="flex">
+      <!--主区-->
+      <div
+        class="flex"
+        style="width: 90%; height: 100vh; flex-direction: column"
+      >
+        <!--内容区-->
+        <div
+          class="flex"
+          style="
+            flex: 6;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+          "
+        >
+          <!--信息栏2个-->
+          <div
+            class="flex xinxi naibai"
+            style="
+              flex-direction: column;
+              justify-content: space-evenly;
+              align-items: flex-start;
+            "
+          >
+            <!--姓名-->
+            <div class="flex yinsi song">姓名： 村里的姑娘</div>
+            <!--出生-->
+            <div class="flex yinsi song">出生： 18年前</div>
+            <!--坐标-->
+            <div class="flex yinsi song">坐标： 在地球上</div>
+            <!--电话-->
+            <div class="flex yinsi song">电话： 575699780</div>
+          </div>
+          <div
+            class="flex xinxi naibai"
+            style="
+              flex-direction: column;
+              justify-content: space-evenly;
+              align-items: flex-start;
+            "
+          >
+            <!--爱好-->
+            <div class="flex yinsi song">爱好： 吃、睡、玩</div>
+            <!--出生-->
+            <div class="flex yinsi song">追星： 杰锅</div>
+            <!--坐标-->
+            <div class="flex yinsi song">运动： 排球</div>
+            <!--电话-->
+            <div class="flex yinsi song">
+              座右铭：我明明什么都没做，你凭什么说我懒！
+            </div>
+          </div>
+          <!--诗句4列-->
+          <div class="flex shiju naibai shuiju">银烛秋光冷画屏</div>
+          <div class="flex shiju naibai shuiju">轻罗小扇扑流萤</div>
+          <div class="flex shiju naibai shuiju">天阶夜色凉如水</div>
+          <div class="flex shiju naibai shuiju">卧看牵牛织女星</div>
+        </div>
+        <!--底部区-->
+        <div
+          class="flex1"
+          style="justify-content: center; border-top: 1px solid rgb(96 40 30)"
+        >
+          <div class="flex" style="align-items: center">
+            <div
+              style="
+                border-bottom: 1px dashed white;
+                font-size: larger;
+                color: rgb(57 82 96);
+              "
+            >
+              蓦然回首，他人亦在灯火阑珊处
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--头像区-->
+      <div
+        class="flex1"
+        style="
+          align-items: center;
+          justify-content: center;
+          border-left: 1px dashed black;
+        "
+      >
+        <div>
+          <img src="./img/IMG_0109.JPG" class="touxiang" />
+          <div
+            style="
+              text-align: center;
+              background-color: rgb(235, 215, 196);
+              opacity: 0.6;
+            "
+          >
+            Lady Sun
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
